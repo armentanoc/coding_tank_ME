@@ -39,7 +39,50 @@ namespace CodingTankME
                 }
             }
 
-            Console.WriteLine(string.Join(", ", arrayNumbers));
+            int n1 = arrayNumbers[0],
+                n2 = arrayNumbers[1],
+                multiply = 0,
+                divide = 0,
+                sign = 1;
+
+            /*captura o módulo dos números para utilizar*/
+
+            if (n1 < 0)
+            {
+                sign *= -1;
+                n1 = -n1;
+            }
+            if (n2 < 0)
+            {
+                sign *= -1;
+                n2 = -n2;
+            }
+
+            /*calcula multiplicação através de adição repetida*/
+
+            for (int i = 0; i < n2; i++)
+            {
+                multiply += n1;
+            }
+
+            /* calcula a divisão por inteiros
+            * (quantas vezes n2 cabe em n1?)*/
+
+            while (n1 >= n2)
+            {
+                n1 -= n2;
+                divide++;
+            }
+
+            /*ajusta o sinal correto na divisão e na multiplicação*/
+
+            divide *= sign;
+            multiply *= sign;
+
+            Console.WriteLine(Assets.horizontalLine());
+            Console.WriteLine($"\nMultiplicação: {multiply}");
+            Console.WriteLine($"Divisão Inteira: {divide}");
+
         }
     }
 }
