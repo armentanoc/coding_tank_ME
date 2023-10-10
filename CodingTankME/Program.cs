@@ -30,7 +30,7 @@ namespace CodingTankME {
                         break;
                     case 3:
                         Console.WriteLine("\nQuestão 3");
-                        //TipCalculator.run();
+                        AnalyzePhrase.run();
                         Main(args);
                         break;
                     case 0:

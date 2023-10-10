@@ -8,6 +8,8 @@ Cada uma das informações deve ser escrita em uma linha diferente.
 
  */
 
+using System;
+
 namespace CodingTankME
 {
     class Numbers
