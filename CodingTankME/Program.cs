@@ -25,7 +25,7 @@ namespace CodingTankME {
                         break;
                     case 2:
                         Console.WriteLine("\nQuestão 2");
-                        //AgeCalculator.run();
+                        Calculate.run();
                         Main(args);
                         break;
                     case 3:
