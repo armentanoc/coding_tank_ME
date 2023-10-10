@@ -6,11 +6,11 @@ namespace CodingTankME {
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("\nCODING TANK ME - ANA CAROLINA ARMENTANO E SILVA\n" +
-                "\nQual programa você deseja executar?\n" +
-                "\n(1) Questão 1" +
-                "\n(2) Questão 2" +
-                "\n(3) Questão 3" +
+            Console.WriteLine("\nCODING TANK ME - ANA CAROLINA ARMENTANO\n" +
+                "\nQual programa você deseja executar?" +
+                "\n(1) Questão 1 - Números Pares, Ímpares e Negativos" +
+                "\n(2) Questão 2 - Operações Matemáticas" +
+                "\n(3) Questão 3 - Análise de Frase" +
                 "\n(0) Sair");
 
             try
@@ -19,17 +19,17 @@ namespace CodingTankME {
                 switch (choice)
                 {
                     case 1:
-                        Console.WriteLine("\nQuestão 1\n");
-                        //SimpleCalculator.run();
+                        Console.WriteLine("\nQuestão 1");
+                        Numbers.run();
                         Main(args);
                         break;
                     case 2:
-                        Console.WriteLine("\nQuestão 2\n");
+                        Console.WriteLine("\nQuestão 2");
                         //AgeCalculator.run();
                         Main(args);
                         break;
                     case 3:
-                        Console.WriteLine("\nQuestão 3\n");
+                        Console.WriteLine("\nQuestão 3");
                         //TipCalculator.run();
                         Main(args);
                         break;
